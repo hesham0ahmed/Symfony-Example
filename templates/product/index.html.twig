@@ -1,0 +1,53 @@
+{% extends "base.html.twig" %}
+{% block title %}Welcome to Symfony!{% endblock %}
+{% block body %}
+
+
+
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom">Travel 24/7</h2>
+</div>
+
+  {# CARDS #}
+  <div class=" d-flex justify-content-center">
+  <div class="row row-cols-1 g-4 mx-2 my-2" style="width: 400px;">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{ product.picture }}" alt="Product Picture">
+        <div class="card-body">
+          <h5 class="card-title">Destination: <strong>{{ product.destination }}</strong></h5>
+          <p class="card-text">Price: <strong>{{ product.price }} $</strong></p>
+        </div>
+        <div class="card-footer">
+          {# <small class="text-body-secondary"><a href="#" class="btn btn-primary">Details for ID: {{ product.id }}</a></small><br> #}
+          <a href="http://localhost:8000/product" class="btn btn-warning">Back</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  {# CARDS END #}
+
+
+  
+
+
+  
+
+      
+
+
+      {% endblock %}
+
+      {% block stylesheets %}
+      {# CAN USE IT INTERNAL OR LINK #}
+
+      {# /* <style>
+        p {
+          color: green;
+
+        }
+      </style> */ #}
+
+      <link rel="stylesheet" href="{{ asset('css/random.css') }}">
+      {% endblock %}

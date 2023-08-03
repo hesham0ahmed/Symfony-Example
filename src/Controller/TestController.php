@@ -8,14 +8,40 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TestController extends AbstractController
 {
-    #[Route('/test', name: 'app_test')]
+    // TEST
+    #[Route('/', name: 'app_test')]
     public function index(): Response
     {
-        return $this->render('test/index.html.twig', [
+        return $this->render('product/main.html.twig', [
+            'controller_name' => 'Symfony User',
+        ]);
+    }
+    // ABOUT US
+    #[Route('/about', name: 'app_about')]
+    public function about(): Response
+    {
+        return $this->render('test/about.html.twig', [
+            'controller_name' => 'Symfony User',
+        ]);
+    }
+    // NEWS
+    #[Route('/news', name: 'app_news')]
+    public function news(): Response
+    {
+        return $this->render('test/news.html.twig', [
+            'controller_name' => 'Symfony User',
+        ]);
+    }
+    // CONTACT
+    #[Route('/checkout', name: 'app_checkout')]
+    public function checkout(): Response
+    {
+        return $this->render('test/checkout.html.twig', [
             'controller_name' => 'Symfony User',
         ]);
     }
 
+    // RANDOM
     #[Route('/random/{num}', name: 'app_random')]
     public function random($num): Response
     {

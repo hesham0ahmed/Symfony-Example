@@ -1,0 +1,90 @@
+{% extends "base.html.twig" %}
+{% block title %}TRAVEL{% endblock %}
+{% block body %}
+
+
+
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom">Travel 24/7</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/1.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">City Trip</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+          
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>Somewhere </small>
+            </li><a href="http://localhost:8000/product/1" class="btn btn-primary">More Info</a>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>3 days Trip</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/2.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Beach Trip</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+           
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>Somewhere </small>
+            </li><a href="http://localhost:8000/product/8" class="btn btn-primary">More Info</a>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>4 days Trip</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('img/3.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Culture Trip</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+         
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>Somewhere </small>
+            </li><a href="http://localhost:8000/product/9" class="btn btn-primary">More Info</a>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>5 days Trip</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+  
+
+      
+
+
+      {% endblock %}
+
+      {% block stylesheets %}
+      {# CAN USE IT INTERNAL OR LINK #}
+
+      {# /* <style>
+        p {
+          color: green;
+
+        }
+      </style> */ #}
+
+      <link rel="stylesheet" href="{{ asset('css/random.css') }}">
+      {% endblock %}
